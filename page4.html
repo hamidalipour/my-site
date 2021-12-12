@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+		Hamidreza Alipour
+		</title>
+		<link rel="stylesheet" href="mystyle.CSS">
+		
+		
+		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+  			$("#makesure").hide();
+  			$("#yes").hide();
+  			$("#no").hide();
+  			$("#sent").hide();
+  			
+  			$("#send").click(function(){
+    			$("#makesure").show();
+    			$("#yes").show();
+    			$("#no").show();
+    
+    		$("#yes").click(function(){
+    			$("#sent").show();
+    		});
+    
+    		$("#no").click(function(){
+    			$("#no").hide();
+    			$("#makesure").hide();
+  				$("#yes").hide();
+  				$("#sent").hide();
+    		});
+  			});
+		});
+		</script>
+	</head>
+	<br>
+	
+	<body>
+		<div class="header">
+		<h><a href="index.html"> صفحه اول</a> &nbsp;</h>
+		<h><a href="page2.html"> صفحه دوم </a>&nbsp;</h>
+		<h><a href="page3.html"> صفحه سوم </a>&nbsp;</h>
+		<h><a href="page4.html"> صفحه چهارم </a>&nbsp;</h>
+		</div> <br>
+
+
+
+		<div class="main">
+			<div class="main-right">
+				<p style="font-size:35px;">تماس با من </p><br>
+				<div class="form">
+					<form>
+				
+					<label>نام </label>
+					<input type="text" placeholder="نام">
+				
+					<label>نام خانوادگی </label>
+					<input type="text" placeholder="نام خانوادگی">
+				
+					<label> ایمیل</label>
+					<input type="text" placeholder="ایمیل">
+				
+					<label> تلفن</label>
+					<input type="text" placeholder="تلفن">
+					
+					<label> مدرک تحصیلی</label>
+					<select>
+						<option> زیر دیپلم</option>
+						<option> دیپلم</option>
+						<option> لیسانس</option>
+						<option> فوق لیسانس</option>
+						<option> دکترا</option>
+					
+					
+					
+					</select>
+					
+					<label> عنوان پیام</label>
+					<input type="text" placeholder="عنوان پیام">
+					
+					<label> پیام</label>
+					<textarea> متن پیام را وارد کنید</textarea>
+				
+					</form>
+				<br><br>
+			
+			
+		
+		
+		
+		<button type="button" id="send" style="background-color:green; color:white;">ارسال</button>
+		<p id="makesure">آیا از ارسال اطمینان دارید؟</p>
+		<button type="button" id="yes" style="background-color:green; color:white;">بله</button>
+		<button type="button" id="no" style="background-color:red; color:white;">خیر</button>
+		<p id="sent" style="color:green;">پیام شما با موفقیت ارسال شد</p>
+
+		
+				</div>
+			</div>
+		</div>
+		<br>
+		
+		
+		
+		
+		
+		
+		
+		<div class="footer">
+			<p >ایمیل :hmr.alipour@gmail.com</p>
+			
+			<p > تلفن:09337506400</p>
+			<a href="https://stackoverflow.com/users/17460551/hamidreza-alipour">لینک stackoverflow</a> <br>
+			<a href="https://github.com/hamidalipour?tab=repositories">لینک github</a>
+		</div>
+		
+		
